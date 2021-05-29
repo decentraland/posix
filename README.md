@@ -10,13 +10,13 @@ Contains the environment type definitions for the exposed functions in the scene
 
 ## Contributions
 
-This repository is append only, more specifically, nothing can be changed or demoved once a type declaration gets released with a version tag (excluding the `@next` releases).
+This repository is append only, more specifically, nothing can be changed or removed once a type declaration gets released with a version tag (excluding the `@next` releases).
 
-That makes this project almost static. Because every addition is a maintainability compromise that will last forever.
+That makes this project almost static, because every addition is a maintainability compromise that will last forever.
 
-For exceptional cases of API additions, it should be a very thoughtful process for the reasons mentioned above.
+For exceptional cases, like API additions, it should be a very thoughtful process for the reasons mentioned above, and the proposed mechanism is to first draft the full scope of the solution in a PR explaining the reasons and evaluating other options.
 
-The most common and least dangerous thing that could be added to this, repository are events from the engine or the runtime (see IEvents).
+The most common and least "dangerous" addition to this repository are events from the Renderer or the Runtime (see `IEvents`).
 
 Please follow the naming convention for events, it was decided to not use the `on` prefix on events since it is redundant and confusing with observables and event emiters: `events.on("eventName")` is better than `events.on("onEventName")`.
 
