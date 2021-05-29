@@ -334,7 +334,6 @@ export interface IEvents {
   onEnter: {}
 
   /**
-   * @internal
    * `onPointerLock` is triggered when the user clicks the world canvas and the
    * pointer locks to it so the pointer moves the camera
    */
@@ -461,13 +460,11 @@ export interface IEvents {
   /** For gizmos */
   gizmoEvent: GizmoDragEndEvent | GizmoSelectedEvent
 
-  // @internal
   externalAction: {
     type: string
     [key: string]: any
   }
 
-  // @internal
   stateEvent: {
     type: string
     payload: any
