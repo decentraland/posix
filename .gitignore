@@ -6,3 +6,4 @@ tsdoc-metadata.json
 types
 index.d.ts
 *.tgz
+test/*.js
