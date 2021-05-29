@@ -199,7 +199,6 @@ export interface IEvents {
     userId: string
   }
 
-  // @internal
   onPointerLock: {}
 
   // (undocumented)
