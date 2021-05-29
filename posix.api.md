@@ -15,7 +15,7 @@ export type DecentralandInterface = {
 
   log(...a: any[]): void
 
-  error(message: string, data?: any): void
+  error(message: string | Error, data?: any): void
 
   openExternalUrl(url: string): void
 

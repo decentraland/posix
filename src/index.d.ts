@@ -59,7 +59,7 @@ export type DecentralandInterface = {
   log(...a: any[]): void
 
   /** error function */
-  error(message: string, data?: any): void
+  error(message: string | Error, data?: any): void
 
   /** open external url */
   // TODO: remove from here
