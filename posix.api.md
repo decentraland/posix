@@ -63,9 +63,9 @@ export type DecentralandInterface = {
 
   // MODULES
 
-  loadModule(moduleName: string, exportsRef: any): PromiseLike<ModuleDescriptor>
+  loadModule(moduleName: string, exportsRef: any): Promise<ModuleDescriptor>
 
-  callRpc(rpcHandle: string, methodName: string, args: ArrayLike<any>): PromiseLike<any>
+  callRpc(rpcHandle: string, methodName: string, args: ArrayLike<any>): Promise<any>
 }
 
 // @public (undocumented)
