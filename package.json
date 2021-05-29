@@ -1,5 +1,5 @@
 {
-  "name": "@dcl/js-env",
+  "name": "@dcl/posix",
   "version": "1.0.0",
   "description": "Decentraland JS Portable Interface",
   "typings": "index.d.ts",
