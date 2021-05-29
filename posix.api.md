@@ -249,7 +249,7 @@ export interface IEvents {
 }
 
 // @public (undocumented)
-export type InputEventResult = Readonly<{
+export type InputEventResult = {
   origin: ReadOnlyVector3
   direction: ReadOnlyVector3
   buttonId: number
@@ -261,7 +261,7 @@ export type InputEventResult = Readonly<{
     worldNormal: ReadOnlyVector3
     entityId: EntityID
   }
-}>
+}
 
 // @public (undocumented)
 export type MethodDescriptor = { name: string }

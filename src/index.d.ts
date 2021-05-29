@@ -159,7 +159,7 @@ export type ReadOnlyVector4 = {
 export type ReadOnlyQuaternion = ReadOnlyVector4
 
 /** @public */
-export type InputEventResult = Readonly<{
+export type InputEventResult = {
   /** Origin of the ray, relative to the scene */
   origin: ReadOnlyVector3
   /** Direction vector of the ray (normalized) */
@@ -181,7 +181,7 @@ export type InputEventResult = Readonly<{
     /** Hit entity ID if any */
     entityId: EntityID
   }
-}>
+}
 
 /** @public */
 export type GlobalInputEventResult = InputEventResult & {
