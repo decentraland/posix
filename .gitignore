@@ -1,0 +1,8 @@
+dist
+node_modules
+temp
+tsdoc-metadata.json
+**/.DS_Store
+types
+index.d.ts
+*.tgz

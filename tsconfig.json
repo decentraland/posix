@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "CommonJS",
+    "strict": true,
+    "strictNullChecks": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "declaration": true,
+    "stripInternal": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "pretty": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "downlevelIteration": true,
+    "keyofStringsOnly": true,
+    "noUnusedLocals": true,
+    "types": [],
+    "typeRoots": [],
+    "lib": [
+      "ES2020"
+    ]
+  },
+  "exclude": [
+    "./dist",
+    "./types",
+    "./temp",
+    "./node_modules"
+  ],
+  "include": [
+    "./src/index.d.ts"
+  ]
+}
