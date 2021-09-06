@@ -470,12 +470,15 @@ export interface IEvents {
     payload: any
   }
 
+  /** This is triggered at least for each videoStatus change */
   videoEvent: {
     componentId: string
-    sceneId: string
     videoClipId: string
+    /** Status, can be NONE = 0, ERROR = 1, LOADING = 2, READY = 3, PLAYING = 4,BUFFERING = 5 */
     videoStatus: number
+    /** Current offset position in seconds */
     currentOffset: number
-    length: number
+    /** Video length in seconds. Can be -1 */
+    totalVideoLength: number
   }
 }
