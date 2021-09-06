@@ -246,14 +246,12 @@ export interface IEvents {
     payload: any
   }
 
-  // (undocumented)
   videoEvent: {
     componentId: string
-    sceneId: string
     videoClipId: string
     videoStatus: number
     currentOffset: number
-    length: number
+    totalVideoLength: number
   }
 }
 
