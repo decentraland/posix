@@ -245,6 +245,14 @@ export interface IEvents {
     uuid: string
     payload: any
   }
+
+  videoEvent: {
+    componentId: string
+    videoClipId: string
+    videoStatus: number
+    currentOffset: number
+    totalVideoLength: number
+  }
 }
 
 // @public (undocumented)
