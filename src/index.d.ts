@@ -469,4 +469,13 @@ export interface IEvents {
     type: string
     payload: any
   }
+
+  videoEvent: {
+    componentId: string
+    sceneId: string
+    videoClipId: string
+    videoStatus: number
+    currentOffset: number
+    length: number
+  }
 }
