@@ -492,4 +492,10 @@ export interface IEvents {
     /** Video length in seconds. Can be -1 */
     totalVideoLength: number
   }
+
+  /** This is trigger everytime a profile is changed */
+  profileChanged: {
+    ethAddress: string
+    version:number
+  }
 }
