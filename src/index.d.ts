@@ -496,6 +496,6 @@ export interface IEvents {
   /** This is trigger everytime a profile is changed */
   profileChanged: {
     ethAddress: string
-    version:number
+    version: number
   }
 }

@@ -230,7 +230,7 @@ export interface IEvents {
 
   profileChanged: {
     ethAddress: string
-    version:number
+    version: number
   }
 
   raycastResponse: RaycastResponsePayload<any>
