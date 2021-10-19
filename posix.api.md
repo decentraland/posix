@@ -110,6 +110,8 @@ export type IEventNames = keyof IEvents
 
 // @public
 export interface IEvents {
+  actionButtonEvent: GlobalInputEventResult
+
   builderSceneStart: {}
 
   builderSceneUnloaded: {}
@@ -213,6 +215,7 @@ export interface IEvents {
 
   pointerDown: InputEventResult
 
+  // @deprecated
   pointerEvent: GlobalInputEventResult
 
   pointerUp: InputEventResult

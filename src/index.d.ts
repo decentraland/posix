@@ -298,8 +298,19 @@ export interface IEvents {
   /**
    * `pointerEvent` is triggered when the user press or releases an input pointer.
    * It could be a VR controller, a touch screen or the mouse.
+   *
+   * @deprecated use actionButtonEvent instead
    */
   pointerEvent: GlobalInputEventResult
+
+  /**
+   * `actionButtonEvent` is triggered when the user press or releases an input pointer.
+   * It could be a VR controller, a touch screen or the mouse.
+   *
+   * This event is exactly the same as `pointerEvent` but the logic in the ECS had an unsolvable
+   * condition that required us to create this new event to handle more cases for new buttons.
+   */
+  actionButtonEvent: GlobalInputEventResult
 
   /**
    * `raycastResponse` is triggered in response to a raycast query
