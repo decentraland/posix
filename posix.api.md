@@ -228,6 +228,11 @@ export interface IEvents {
     playerHeight: number
   }
 
+  profileChanged: {
+    ethAddress: string
+    version: number
+  }
+
   raycastResponse: RaycastResponsePayload<any>
 
   rotationChanged: {
