@@ -201,7 +201,9 @@ export interface IEvents {
     userId: string
   }
 
-  onPointerLock: {}
+  onPointerLock: {
+    locked?: boolean
+  }
 
   // (undocumented)
   onTextSubmit: {
@@ -261,6 +263,7 @@ export interface IEvents {
     currentOffset: number
     totalVideoLength: number
   }
+
 }
 
 // @public (undocumented)
