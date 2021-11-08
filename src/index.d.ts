@@ -348,7 +348,9 @@ export interface IEvents {
    * `onPointerLock` is triggered when the user clicks the world canvas and the
    * pointer locks to it so the pointer moves the camera
    */
-  onPointerLock: {}
+  onPointerLock: {
+    locked?: boolean
+  }
 
   /**
    * `onAnimationEnd` is triggered when an animation clip gets finish
@@ -498,4 +500,5 @@ export interface IEvents {
     ethAddress: string
     version: number
   }
+
 }
