@@ -112,6 +112,14 @@ export type IEventNames = keyof IEvents
 export interface IEvents {
   actionButtonEvent: GlobalInputEventResult
 
+  avatarConnected: {
+    userId: string
+  }
+
+  avatarDisconnected: {
+    userId: string
+  }
+
   builderSceneStart: {}
 
   builderSceneUnloaded: {}
@@ -263,7 +271,6 @@ export interface IEvents {
     currentOffset: number
     totalVideoLength: number
   }
-
 }
 
 // @public (undocumented)
