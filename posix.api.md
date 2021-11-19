@@ -112,14 +112,6 @@ export type IEventNames = keyof IEvents
 export interface IEvents {
   actionButtonEvent: GlobalInputEventResult
 
-  avatarConnected: {
-    userId: string
-  }
-
-  avatarDisconnected: {
-    userId: string
-  }
-
   builderSceneStart: {}
 
   builderSceneUnloaded: {}
@@ -216,6 +208,14 @@ export interface IEvents {
   // (undocumented)
   onTextSubmit: {
     text: string
+  }
+
+  playerConnected: {
+    userId: string
+  }
+
+  playerDisconnected: {
+    userId: string
   }
 
   // (undocumented)

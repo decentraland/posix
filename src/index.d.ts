@@ -502,12 +502,12 @@ export interface IEvents {
   }
 
   /** Triggered when peer's avatar is connected and visible */
-  avatarConnected: {
+  playerConnected: {
     userId: string
   }
 
   /** Triggered when peer disconnect and/or it avatar is set invisible by comms */
-  avatarDisconnected: {
+  playerDisconnected: {
     userId: string
   }
 }
