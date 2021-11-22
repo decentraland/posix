@@ -205,6 +205,13 @@ export interface IEvents {
     locked?: boolean
   }
 
+  onRealmChanged: {
+    domain: string
+    room: string
+    serverName: string
+    displayName: string
+  }
+
   // (undocumented)
   onTextSubmit: {
     text: string
