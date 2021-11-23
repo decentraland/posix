@@ -510,4 +510,12 @@ export interface IEvents {
   playerDisconnected: {
     userId: string
   }
+
+  /** Triggered when current realm or island changes */
+  onRealmChanged: {
+    domain: string
+    room: string
+    serverName: string
+    displayName: string
+  }  
 }
