@@ -7,13 +7,14 @@
 // @public (undocumented)
 export enum AttachToAvatarAnchorPointId {
   // (undocumented)
-  LeftHand,
+  LeftHand = 2,
   // (undocumented)
-  NameTag,
+  NameTag = 1,
   // (undocumented)
   Position = 0,
   // (undocumented)
-  RightHand
+  RightHand = 3
+
 }
 
 // @public (undocumented)
