@@ -5,6 +5,19 @@
 ```ts
 
 // @public (undocumented)
+export enum AttachToAvatarAnchorPointId {
+  // (undocumented)
+  LeftHand = 2,
+  // (undocumented)
+  NameTag = 1,
+  // (undocumented)
+  Position = 0,
+  // (undocumented)
+  RightHand = 3
+
+}
+
+// @public (undocumented)
 export type ComponentID = string
 
 // @public (undocumented)
