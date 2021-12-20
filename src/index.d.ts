@@ -220,9 +220,9 @@ export type GizmoSelectedEvent = {
 /** @public */
 export enum AttachToAvatarAnchorPointId {
   Position = 0,
-  NameTag,
-  LeftHand,
-  RightHand
+  NameTag = 1,
+  LeftHand = 2,
+  RightHand = 3
 }
 
 /// --- EVENTS ---
