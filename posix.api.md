@@ -9,7 +9,9 @@ export enum AttachToAvatarAnchorPointId {
   // (undocumented)
   LeftHand,
   // (undocumented)
-  NameTag = 0,
+  NameTag,
+  // (undocumented)
+  Position = 0,
   // (undocumented)
   RightHand
 }
