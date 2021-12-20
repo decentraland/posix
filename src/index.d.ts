@@ -217,6 +217,13 @@ export type GizmoSelectedEvent = {
   entities: string[]
 }
 
+/** @public */
+export enum AttachToAvatarAnchorPointId {
+  NameTag = 0,
+  LeftHand,
+  RightHand
+}
+
 /// --- EVENTS ---
 
 /** @public */
@@ -517,5 +524,5 @@ export interface IEvents {
     room: string
     serverName: string
     displayName: string
-  }  
+  }
 }
