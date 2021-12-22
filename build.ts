@@ -34,6 +34,10 @@ function sanitizeAmbientDeclarations(file: string) {
 
     fs.writeFileSync(dtsFile, content)
 
+    if (content.match(/\benum\b/)) {
+      throw new Error(`The file ${dtsFile} contains enums:\n${content}`)
+    }
+
     if (content.match(/\bexport\b/)) {
       throw new Error(`The file ${dtsFile} contains exports:\n${content}`)
     }
