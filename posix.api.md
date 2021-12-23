@@ -217,6 +217,15 @@ export interface IEvents {
     text: string
   }
 
+  playerClicked: {
+    userId: string
+    ray: {
+      origin: number,
+      direction: number,
+      distance: number
+    }
+  }
+
   playerConnected: {
     userId: string
   }
