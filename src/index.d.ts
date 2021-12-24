@@ -519,4 +519,14 @@ export interface IEvents {
     serverName: string
     displayName: string
   }
+
+  /** Triggered when other player's avatar is clicked */
+  playerClicked: {
+    userId: string
+    ray: {
+      origin: ReadOnlyVector3
+      direction: ReadOnlyVector3
+      distance: number
+    }
+  }
 }
