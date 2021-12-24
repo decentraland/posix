@@ -524,8 +524,8 @@ export interface IEvents {
   playerClicked: {
     userId: string
     ray: {
-      origin: number
-      direction: number
+      origin: ReadOnlyVector3
+      direction: ReadOnlyVector3
       distance: number
     }
   }
