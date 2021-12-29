@@ -244,6 +244,10 @@ export interface IEvents {
   // @deprecated
   pointerEvent: GlobalInputEventResult
 
+  pointerHoverEnter: {}
+
+  pointerHoverExit: {}
+
   pointerUp: InputEventResult
 
   positionChanged: {
