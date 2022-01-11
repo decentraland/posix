@@ -529,4 +529,10 @@ export interface IEvents {
       distance: number
     }
   }
+
+  /** Triggered when pointer start hovering an entities' shape */
+  pointerHoverEnter: {}
+
+  /** Triggered when pointer stop hovering an entities' shape */
+  pointerHoverExit: {}
 }
